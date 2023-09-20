@@ -95,7 +95,8 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
 
-        child: Column(
+        child: Stack(
+          alignment: AlignmentDirectional.topStart,
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -109,15 +110,26 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.start,
+          //mainAxisAlignment: MainAxisAlignment.start,
+          //alignment: AlignmentDirectional.center,
           children: <Widget>[
 //            const Text(
 //              'You have pushed the button this many times:',
 //            ),
-            Image.network("https://st.ilfattoquotidiano.it/wp-content/uploads/2021/07/05/calabria-690x362.jpg", scale: 1, semanticLabel: "ciao",),
+          Container(
+            alignment: Alignment.topCenter,
+            child: Image.network("https://st.ilfattoquotidiano.it/wp-content/uploads/2021/07/05/calabria-690x362.jpg", scale: 1,),
+
+          ),
+          Container(
+            alignment: Alignment.topCenter,
+            child: Text('Luoghi',style: TextStyle(color: Colors.pink, fontWeight: FontWeight.bold, fontSize: 22.0)),
+          ),
+
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+
             ),
           ],
         ),
