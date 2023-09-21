@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:viviamo_la_calabria/main.dart';
+import 'package:viviamo_la_calabria/mainBK.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
