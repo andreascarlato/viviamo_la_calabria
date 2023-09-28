@@ -1,5 +1,5 @@
-name: viviamo_la_calabria
-description: A Unical project
+name: viviAmo_la_calabria
+description: dalla conoscenza all'esperienza
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -65,7 +65,6 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/chris.jpg
     - assets/dressers.png
     - assets/wardrobe.png
     - assets/sofas.png
@@ -94,6 +93,7 @@ flutter:
     - assets/servizi.png
     - assets/news.png
     - assets/uicip.png
+    - assets/logo_sba_t.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

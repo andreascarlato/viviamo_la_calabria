@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viviamo_la_calabria/Mic.dart';
+import 'package:viviAmo_la_calabria/Mic.dart';
 import 'MyHomePage.dart';
 import 'Orari.dart';
 import 'Uici.dart';
@@ -99,16 +99,16 @@ class MyHomePageState extends State<MyHomePage>
                           SizedBox(width: 15.0),
                           Container(
                             alignment: Alignment.topLeft,
-                            height: 50.0,
-                            width: 300.0,
+                            height: 80.0,
+                            width: 370.0,
                             decoration: BoxDecoration(
                                 //borderRadius: BorderRadius.circular(25.0),
-                                border: Border.all(
+                                /*border: Border.all(
                                     color: Colors.white,
                                     style: BorderStyle.solid,
-                                    width: 2.0),
+                                    width: 2.0),*/
                                 image: DecorationImage(
-                                    image: AssetImage('assets/logo_sba.jpg'))),
+                                    image: AssetImage('assets/logo_sba_t.png'))),
                           ),
                          /* SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
@@ -342,6 +342,7 @@ class MyHomePageState extends State<MyHomePage>
               ),
               itemCard('SBA', 'assets/sba.jpg', 'Il sistema bibliotecario più grande del Mezzogiorno','https://sba.unical.it/home'),
               itemCard('Catalogo Online', 'assets/catalogo.png', 'OPAC - Sistema Bibliotecario di Ateneo','http://libcal03.biblioteche.unical.it:8991/F'),
+              itemCard('Arte e paesaggio', 'assets/movio.png','a Cosenza e Scolacium','https://unical-arteepaesaggioacosenzaeascolacium.movio.it/it/1/home'),
               itemCard('Tra realizzato e immaginato', 'assets/movio.png','La gestione dell\'acqua in Calabria, passato e futuro anteriore','https://unical-lagestionedellacquaincalabria.movio.it/it/1/home'),
               itemCard('Guerra e pace', 'assets/movio.png','Memorie periferiche fra le pieghe del secondo conflitto mondiale.','https://unical-guerraepace.movio.it/it/1/home'),
               itemCard('Contatti', 'assets/orari.png','Riferimenti e contatti','https://sba.unical.it/contatti'),
@@ -351,9 +352,27 @@ class MyHomePageState extends State<MyHomePage>
       ),
 
 
-
-/*
-      bottomNavigationBar: Material(
+    bottomNavigationBar: Material(
+          color: Colors.white,
+    /*child: TabBar(
+          controller: controller,
+          indicatorColor: Colors.yellow,
+          tabs: <Widget>[
+            Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
+            Tab(icon: Icon(Icons.timer, color: Colors.grey)),
+            Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
+            Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
+          ],
+        ),*/
+          child: Text ('Intervento a valere sul POR Calabria FESR-FSE 2014/2020 - ASS VI - AZIONE 6.8.3, approvato con DD n. 2671 del 24/02/2023 - ViviAMO la Calabria: dalla conoscenza all\'esperienza CUP H27G23000030006',
+            style: TextStyle(
+                fontFamily: 'Quicksand',
+                fontSize: 12.0,
+                fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+          ),
+    ),
+/*        bottomNavigationBar: Material(
         color: Colors.white,
         child: TabBar(
           controller: controller,
